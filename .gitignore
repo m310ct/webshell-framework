@@ -1,0 +1,57 @@
+# Node.js 环境
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# 编辑器/IDE 配置
+.vscode/
+.idea/
+*.swp
+
+# 编译和构建输出
+/dist/
+/build/
+*.log
+
+# 操作系统相关文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.bak
+*.tmp
+*.swp
+
+# .env 文件，保存敏感信息
+.env
+
+# 可能的 WebShell 特定文件
+*.php
+*.html
+*.js
+*.css
+*.json
+
+# 防止上传错误的系统缓存文件
+/.cache/
+/npm-debug.log*
+
+# 其他可能生成的临时文件
+*.log
+*.pid
+
+# 如果使用了 Docker
+.docker/
+
+# 如果使用了某些特定的框架
+/.next/      # Next.js
+/.nuxt/      # Nuxt.js
+/.expo/      # Expo for React Native
+/.meteor/    # Meteor
+/.serverless # Serverless Framework
+
+# 忽略已发布的静态文件
+/public/
+
