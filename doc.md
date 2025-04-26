@@ -8,7 +8,7 @@
 ### 作用
 提供基础的命令，刚启动wsf时使用的
 ### 命令
-- about
+- about !
   - 输出项目基本信息(版本)，作者信息，项目地址等
 - list 参数
   - 可选择参数为modules和sessions
@@ -18,7 +18,7 @@
   - 参数为modules
 - con 参数
   - 参数为sessionID
-- exit
+- exit !
   - 退出程序
 - help
   - 帮助
