@@ -9,7 +9,7 @@ class CommandInterface:
             'path':'bold ansired',
             'prompt':'default'
         })
-        self.cmd = None
+        self.cmd = ""
         self.path = ""
 
     def IOhandler(self):
@@ -23,14 +23,16 @@ class CommandInterface:
             return
         elif self.cmd.strip() == "exit":
             self.cmd_exit()
+            return
         elif self.cmd.strip() == "about":
             self.cmd_about()
-        elif self.cmd.strip() in ["use","list","con","set"]:
+            return
+        elif any(self.cmd.strip().startswith(cmd) for cmd in ["use", "list", "con", "set"]):
             #这些命令在对应的生成器，连接器中设定
             pass
         else:
             self.exec_system_cmd(self.cmd)
-
+            return
     def cmd_exit(self):
         print("Bye!")
         exit()
