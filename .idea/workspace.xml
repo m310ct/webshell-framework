@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a90599b2-9959-43f0-ab40-6bd27facad96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/BasicShell.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webshell-framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webshell-framework.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/CommandInterface.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/CommandInterface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +74,7 @@
       <workItem from="1745653297597" duration="1749000" />
       <workItem from="1745655124978" duration="237000" />
       <workItem from="1745655414807" duration="6513000" />
+      <workItem from="1745731307532" duration="407000" />
     </task>
     <servers />
   </component>

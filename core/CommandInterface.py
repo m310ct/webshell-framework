@@ -25,9 +25,8 @@ class CommandInterface:
             self.cmd_exit()
         elif self.cmd.strip() == "about":
             self.cmd_about()
-        elif self.cmd.strip() == "use":
-            self.cmd_use()
-        elif self.cmd.strip() == "help":
+        elif self.cmd.strip() in ["use","list","con","set"]:
+            #这些命令在对应的生成器，连接器中设定
             pass
         else:
             self.exec_system_cmd(self.cmd)
@@ -51,9 +50,6 @@ Github: {colored("https://github.com/m310ct/webshell-framework", "green",attrs=[
 
         print(colored(about_text, 'cyan'))
 
-    def cmd_use(self):
-        pass
-
     def exec_system_cmd(self,command):
         try:
             res = subprocess.run(command, shell=True,
@@ -62,7 +58,7 @@ Github: {colored("https://github.com/m310ct/webshell-framework", "green",attrs=[
                                  text=True)
             print(res.stdout.strip())
         except subprocess.CalledProcessError as e:
-            print(f"[!] Command faild with error:\n{colored(e.stderr.strip(),"red")}\nRun the {colored("help","cyan")} command for more details.")
+            print(f"{colored("[!]","red",attrs=["bold"])} Command faild with error:\n{colored(e.stderr.strip(),"red")}\nRun the {colored("help","cyan")} command for more details.")
 
     def run(self):
         while True:
